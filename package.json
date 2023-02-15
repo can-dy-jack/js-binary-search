@@ -1,15 +1,15 @@
 {
   "name": "@kartjim/js-binary-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript binary search implementation.",
-  "module": "index.js",
+  "module": "./lib/bisect.js",
   "main": "js-binary-search.js",
-  "types": "index.d.ts",
+  "types": "./lib/bisect.d.ts",
   "jsdelivr": "js-binary-search.min.js",
   "unpkg": "js-binary-search.min.js",
   "scripts": {
     "test": "jest lib/bisect.test.js",
-    "lint": "eslint index.js lib/bisect.test.js lib/bisect.js",
+    "lint": "eslint lib/bisect.test.js lib/bisect.js",
     "build": "rollup -c",
     "pretest": "yarn run lint",
     "prepublishOnly": "yarn run test && yarn run build"

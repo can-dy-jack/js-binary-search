@@ -2,12 +2,11 @@ const buble = require('@rollup/plugin-buble');
 const terser = require('@rollup/plugin-terser');
 
 const config = (filename, plugins) => ({
-  input: 'index.js',
+  input: './lib/bisect.js',
   output: {
     file: filename,
     format: 'umd',
     indent: false,
-    name: 'js-binary-search',
   },
   plugins,
 });
