@@ -1,5 +1,7 @@
 # binary search ![npm version](https://img.shields.io/npm/v/@kartjim/js-binary-search?style=flat-square) ![Node.js CI](https://github.com/can-dy-jack/js-binary-search/actions/workflows/test.yml/badge.svg)
 
+JavaScript binary search implementation.
+
 > 仿 `Python` `bisect`二分函数模块；
 
 ## install
