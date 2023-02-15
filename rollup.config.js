@@ -1,5 +1,5 @@
-import buble from '@rollup/plugin-buble';
-import terser from '@rollup/plugin-terser';
+const buble = require('@rollup/plugin-buble');
+const terser = require('@rollup/plugin-terser');
 
 const config = (filename, plugins) => ({
   input: 'index.js',
@@ -12,7 +12,7 @@ const config = (filename, plugins) => ({
   plugins,
 });
 
-export default [
+module.exports = [
   config('js-binary-search.js', [buble()]),
   config('js-binary-search.min.js', [buble(), terser()]),
 ];

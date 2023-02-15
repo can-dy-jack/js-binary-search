@@ -1,21 +1,32 @@
 {
-  "name": "js-binary-search",
+  "name": "@kartjim/js-binary-search",
   "version": "1.0.0",
   "description": "JavaScript binary search implementation.",
-  "main": "index.js",
+  "module": "index.js",
+  "main": "js-binary-search.js",
+  "types": "index.d.ts",
+  "jsdelivr": "js-binary-search.min.js",
+  "unpkg": "js-binary-search.min.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint index.js __test__/index.test.js lib/index.js",
+    "test": "jest lib/bisect.test.js",
+    "lint": "eslint index.js lib/bisect.test.js lib/bisect.js",
     "build": "rollup -c",
-    "bench": "node -r esm bench/index.js",
     "pretest": "yarn run lint",
     "prepublishOnly": "yarn run test && yarn run build"
   },
+  "files": [
+    "lib/bisect.js",
+    "index.js",
+    "lib/bisect.d.ts",
+    "index.d.ts",
+    "js-binary-search.js",
+    "js-binary-search.min.js"
+  ],
   "repository": "git+https://github.com/can-dy-jack/js-binary-search.git",
   "keywords": [
-    "javascrpt",
     "algorithm",
-    "binary-search"
+    "binary-search",
+    "JavaScript"
   ],
   "author": "can-dy-jack",
   "license": "MIT",
@@ -29,7 +40,6 @@
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "esm": "^3.2.25",
     "jest": "^29.4.2",
     "rollup": "^3.15.0"
   }
