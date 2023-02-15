@@ -19,7 +19,7 @@ const {
 
 or use CDN:
 ```js
-<script src="https://cdn.jsdelivr.net/npm/@kartjim/js-binary-search@1.0.0/js-binary-search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@kartjim/js-binary-search@1.0.2/js-binary-search.min.js"></script>
 ```
 
 ## use

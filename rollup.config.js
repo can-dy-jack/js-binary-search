@@ -5,8 +5,7 @@ const config = (filename, plugins) => ({
   input: './lib/bisect.js',
   output: {
     file: filename,
-    format: 'umd',
-    indent: false,
+    format: 'iife',
   },
   plugins,
 });

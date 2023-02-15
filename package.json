@@ -1,6 +1,6 @@
 {
   "name": "@kartjim/js-binary-search",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript binary search implementation.",
   "module": "./lib/bisect.js",
   "main": "js-binary-search.js",
